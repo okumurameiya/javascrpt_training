@@ -6,3 +6,7 @@ console.log("Hello world");
 let yourname = "お名前";
 console.log("Hello %sさん", yourname);
 
+// ボタンクリック時に呼び出される関数
+function HelloWorld(){
+    console.log("Hello world!");
+}
