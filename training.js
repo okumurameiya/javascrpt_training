@@ -20,3 +20,13 @@ function HelloWorld2(){
         elements.item(i).firstChild.nodeValue = 'Hello world!';
     }
 }
+
+// input要素を取得し値を変数に代入
+function Hello2U(){
+    let inputText = document.getElementsByTagName(`input`);
+
+    let value = inputText.item(0).value;
+    console.log("Hello %s さん",value);
+    inputText.placeholder = (`Hello, ${value}さん`);
+    inputText.item(0).value = null;
+}
