@@ -10,3 +10,13 @@ console.log("Hello %sさん", yourname);
 function HelloWorld(){
     console.log("Hello world!");
 }
+
+// p要素を取得し値を変換
+function HelloWorld2(){
+    let elements = document.getElementsByTagName(`p`);
+    let len = elements.length;
+    for (let i = 0; i < len; i++){
+        let value = elements.item(i).firstChild.nodeValue;
+        elements.item(i).firstChild.nodeValue = 'Hello world!';
+    }
+}
